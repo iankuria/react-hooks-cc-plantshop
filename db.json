@@ -40,7 +40,15 @@
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
+      "price": 55,
+      "soldOut": true
+    },
+    {
+      "name": "Ian's plant",
+      "image": "https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg",
+      "price": 10000,
+      "soldOut": true,
+      "id": 8
     }
   ]
 }
