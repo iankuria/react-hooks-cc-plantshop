@@ -18,7 +18,7 @@ function PlantCard({ plant, onToggleSoldOut }) {
   }
 
   return (
-    <div className="plant-card">
+    <div className="plant-card" data-testid="plant-item">
       <img src={image} alt={name} />
       <h3>{name}</h3>
       <p>Price: ${price}</p>

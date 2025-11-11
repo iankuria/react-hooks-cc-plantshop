@@ -49,6 +49,13 @@
       "price": 10000,
       "soldOut": true,
       "id": 8
+    },
+    {
+      "name": "new plant",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/caladium-pink-splash-royalty-free-image-1720643818.jpg?crop=0.668xw:1.00xh;0.136xw,0&resize=1120:*",
+      "price": 4000,
+      "soldOut": false,
+      "id": 9
     }
   ]
 }

@@ -21,18 +21,29 @@ function NewPlantForm({ onAddPlant }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("http://localhost:6001/plants", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        image: formData.image,
-        price: parseFloat(formData.price),
-        soldOut: false,
-      }),
-    })
+  fetch("http://localhost:6001/plants", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    name: formData.name,
+    image: formData.image,
+    price: formData.price,
+  }),
+})
+
+
+    // fetch("http://localhost:6001/plants", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     name: formData.name,
+    //     image: formData.image,
+    //     price: parseFloat(formData.price),
+    //     soldOut: false,
+    //   }),
+    // })
       .then((res) => res.json())
       .then((newPlant) => {
         onAddPlant(newPlant);

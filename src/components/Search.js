@@ -6,11 +6,12 @@ function Search({ searchTerm, setSearchTerm }) {
   return (
     <div className="search-bar">
       <input
-        type="text"
-        placeholder="Search plants..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+  type="text"
+  placeholder="Type a name to search..."
+  value={searchTerm}
+  onChange={(e) => setSearchTerm(e.target.value)}
+/>
+
     </div>
   );
 }
