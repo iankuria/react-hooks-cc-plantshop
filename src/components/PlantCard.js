@@ -22,7 +22,7 @@ function PlantCard({ plant, onToggleSoldOut }) {
       <img src={image} alt={name} />
       <h3>{name}</h3>
       <p>Price: ${price}</p>
-      <button onClick={handleClick}>
+      <button onClick={() => onToggleSoldOut(id)}>
         {soldOut ? "Sold Out" : "Available"}
       </button>
     </div>
